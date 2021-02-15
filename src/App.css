@@ -1,0 +1,14 @@
+@font-face {
+  font-family: smartFont;
+  src: url("./smart-font/DejaVuSans.ttf");
+}
+.App {
+  font-family: smartFont;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}

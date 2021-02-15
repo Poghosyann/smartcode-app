@@ -1,0 +1,243 @@
+@import '../Main.scss';
+
+.full-section-courses-page {
+    padding: 95px 0 0;
+    .first-section-courses-page {
+        background-color: $firstBgColor;
+        position: relative;
+        padding-bottom: 30px;
+        .decorateLine {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 60%;
+        }
+
+    }
+}
+.courses-header {
+    @include section();
+    padding: 0;
+    position: relative;
+    .full-header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .time-day {
+        display: flex;
+    }
+
+    .bl-col {
+        background: rgba(146, 227, 169, 0.1);
+        border-radius: 15px;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        font-weight: normal;
+        font-size: 18px;
+        color: #D2D2D2;
+    }
+    .logo-full-courses {
+        width: 40%;
+        z-index: 5;
+        img {
+            width: 100%;
+
+        }
+    }
+
+}
+
+.time-day {
+    .day {
+        display: block;
+        width: 80px;
+        height: auto;
+        font-weight: bold;
+        font-size: 35px;
+        background-color: white;
+        text-align: center;
+    }
+    h2 {
+        padding: 5px;
+        font-size: 35px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    span {
+        display: block;
+        width: 100%;
+
+    }
+}
+
+.courses-info {
+    background-color: $secondBgColor;
+    padding-bottom: 95px;
+    .second-section-courses-page {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        .text-lists-desc {
+            display: flex;
+        }
+        .info-img {
+            background-color: white;
+            width: 40px;
+            padding: 6px;
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+    }
+    .text-list-info {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+}
+.col {
+    margin: 0 10px 20px;
+    p {
+        color: #D2D2D2;
+        text-align: justify;
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 25px;
+        color: #ffffff;
+
+    }
+}
+.sign-block {
+    .instructor {
+        background-color: #A21BF4;
+        width: 210px;
+        img {
+            width: 100%;
+
+        }
+
+    }
+    #name-insturctor {
+        text-align: center;
+        background-color: #ffffff;
+        font-size: 18px;
+    }
+
+    .sign-comp {
+        border: 1px solid #363F45;
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .btn-login {
+        background-color: #A21BF4;
+        border: none;
+    }
+}
+.time-tag-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .time {
+        display: flex;
+
+    }
+    .tag {
+        margin-left: 10px;
+    }
+    .leftTime {
+        margin-right: 5px;
+    }
+    .rightTag {
+        margin-right: 5px;
+    }
+}
+
+.table-section {
+    @include section();
+    padding: 0;
+
+    th {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+    }
+    td {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .table-style td,
+    .table-style th {
+        border: 1.5px solid #363F45;
+        padding: 10px;
+
+    }
+    .show-table {
+        color: red;
+
+    }
+    .active-btn {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: darkgoldenrod;
+    }
+}
+@media screen and (max-width:1000px ) {
+
+    .second-section-courses-page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .table-style {
+        margin: 0 auto;
+    }
+
+    .footer-blocks-list {
+        display: grid;
+        justify-content: flex-start;
+        .text-lists-desc {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .time-day {
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-blocks-list {
+        display: grid;
+        grid-auto-rows: 200px;
+        .crs-title {
+            font-size: 20px;
+        }
+    }
+    .courses-list-desc {
+        .bl-col {
+            font-size: 14px;
+            padding: 5px;
+        }
+        .courses-list-show-desc {
+            display: grid;
+            grid-gap: 5px;
+        }
+    }
+
+}

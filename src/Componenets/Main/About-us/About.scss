@@ -1,0 +1,80 @@
+@import '../Main.scss';
+
+.about-section {
+
+    background-color: $firstBgColor;
+    .about-header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        @include section();
+        align-items: center;
+        .title-about {
+            width: 50%;
+
+        }
+        .ab-txt {
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: bold;
+
+        }
+        .desc-txt {
+            color: #BFBFBF;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    .decoratelLine {
+        position: absolute;
+        right: -125px;
+        bottom: 0;
+    }
+}
+
+.about-smart {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    background-color: #2A3136;
+    width: 100%;
+    .about-smart-this {
+        display: flex;
+        justify-content: space-between;
+        @include section();
+
+    }
+
+    .img-smart-code {
+        margin-top: 60px;
+        width: 40%;
+        background-color: #FFDA3A;
+        position: relative;
+        width: 40%;
+        height: 300px;
+        .courseNarek {
+            position: absolute;
+            top: -90px;
+            left: 80px;
+
+        }
+        .learncourse {
+            position: absolute;
+            bottom: -140px;
+            left: -50px;
+        }
+
+    }
+    .about-text-info-smart {
+        width: 50%;
+        p {
+            color: #D1D1D1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            margin-top: 15px;
+
+        }
+    }
+}
